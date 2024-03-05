@@ -1,4 +1,4 @@
-
+import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
 import 'package:netflix_clone/api/api.dart';
 import 'package:netflix_clone/valueNotifier/valuenotifier.dart';
@@ -24,8 +24,11 @@ Padding searchBox(BuildContext context) {
               child: TextField(
             onChanged: (value) {
               isLoading.value = true;
-              loadSearchScreen(value);
-            //here
+              EasyDebounce.debounce(
+                  'my-debouncer',
+                  const Duration(milliseconds: 500),
+                  () => loadSearchScreen(value),
+                  );
             },
             showCursor: true,
             textAlign: TextAlign.start,
