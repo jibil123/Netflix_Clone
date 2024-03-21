@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import 'package:netflix_clone/valueNotifier/valuenotifier.dart';
 
 String apiKey = "890777d4bd09ad0d415d0b4fa469527e";
-String imageUrl = "https://image.tmdb.org/t/p/w500"; 
+String imageUrl = "https://image.tmdb.org/t/p/w500";  
 
 loadPopularMovies() async {
   final url =
