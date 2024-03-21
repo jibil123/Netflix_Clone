@@ -11,7 +11,7 @@ Padding searchBox(BuildContext context) {
       width: double.infinity,
       height: mediaqueryHeight(0.06, context),
       decoration: const BoxDecoration(color: Colors.white24),
-      child: Row(
+      child: Row( 
         children: [
           SizedBox(
             width: mediaqueryWidth(0.05, context),
@@ -28,7 +28,7 @@ Padding searchBox(BuildContext context) {
                   'my-debouncer',
                   const Duration(milliseconds: 500),
                   () => loadSearchScreen(value),
-                  );
+                );
             },
             showCursor: true,
             textAlign: TextAlign.start,

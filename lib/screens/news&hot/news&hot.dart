@@ -10,11 +10,11 @@ class NewsAndHot extends StatefulWidget {
   @override
   State<NewsAndHot> createState() => _NewsAndHotState();
 }
-
 class _NewsAndHotState extends State<NewsAndHot> {
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) {  
     return Scaffold(
+      backgroundColor: blackColor,
       body:SafeArea(
         child: SingleChildScrollView(
           child: Padding(
